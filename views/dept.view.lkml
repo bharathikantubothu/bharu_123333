@@ -21,6 +21,10 @@ view: dept {
     type: string
     sql: ${TABLE}.DeptName ;;
   }
+  dimension: dept_name11 {
+    type: string
+    sql: ${TABLE}.DeptName ;;
+  }
   dimension: dept11 {
     type: string
     sql: ${TABLE}.DeptName ;;
