@@ -22,7 +22,7 @@ persist_with: bharu_123333_default_datagroup
 
 # To see the Explore you’re building, navigate to the Explore menu and select an Explore under "Bharu 123333"
 
-explore: billion_orders {
+explore: billion_orders111 {
   join: orders {
     type: left_outer
     sql_on: ${billion_orders.order_id} = ${orders.id} ;;
