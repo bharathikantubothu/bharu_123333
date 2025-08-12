@@ -3,6 +3,7 @@ connection: "@{connection}"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/newdashboard/sravan.dashboard.lookml"
 
 
 # Datagroups define a caching policy for an Explore. To learn more,
