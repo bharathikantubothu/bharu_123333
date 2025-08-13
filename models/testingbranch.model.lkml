@@ -115,6 +115,7 @@ explore: korean_string {}
 explore: map_layer {}
 
 explore: orders {
+  sql_always_having: ${users.id} = 1 ;;
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
@@ -127,7 +128,6 @@ explore: order_items {
   filters: [orders.status: "pending", users.state: "alabama"]
   }
   sql_always_where: ${returned_date} >= '2021-01-01' ;;
-  sql_always_having: ${orders.user_id};;
 
   join: orders {
     type: left_outer
